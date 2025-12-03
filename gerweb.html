@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lokale Elektropaneele — Startseite</title>
+  <link rel="stylesheet" href="gerwebstyles.css" />
+</head>
+<body>
+
+  <!-- STICKY CTA -->
+  <div id="sticky-cta" class="sticky-cta">
+    <div class="cta-left">📞 +49 30 12345678</div>
+    <button id="cta-quote" class="cta-btn">Angebot anfragen</button>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <div class="logo-box">LOGO</div>
+        <span class="logo-text">Lokale Elektropaneele</span>
+      </div>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="gerweb.html">Startseite</a>
+        <a href="gerweb2.html">Produkte</a>
+        <a href="#about">Über uns</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+
+      <button id="navToggle" class="nav-toggle" aria-label="Menü umschalten">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1 class="headline">Hochwertige Elektropaneele – lokal gefertigt</h1>
+      <p class="lead">Sicher, langlebig und individuell angepasst für Haus und Gewerbe. Schnelle Angebote und lokaler Support.</p>
+      <div class="hero-cta">
+        <a href="gerweb2.html" class="btn btn-primary">Produkte ansehen</a>
+        <button class="btn btn-outline" id="heroQuote">Angebot anfragen</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS PREVIEW -->
+  <section class="section products-preview" id="products">
+    <h2 class="section-title">Unsere Top-Produkte</h2>
+    <div class="grid" id="productGrid">
+      <article class="card fade-up">
+        <div class="card-media" style="background-image:url('https://source.unsplash.com/600x400/?electrical-panel');"></div>
+        <h3>Hauptverteilungspanel</h3>
+        <p>Zuverlässig für Wohn- und kleine Gewerbeanlagen.</p>
+        <div class="card-actions">
+          <a href="gerweb2.html#main-distribution" class="link">Mehr erfahren</a>
+          <button class="btn-sm" data-product="Hauptverteilungspanel">Angebot anfragen</button>
+        </div>
+      </article>
+
+      <article class="card fade-up" style="transition-delay:120ms">
+        <div class="card-media" style="background-image:url('https://source.unsplash.com/600x400/?control-panel');"></div>
+        <h3>Steuerungspanel</h3>
+        <p>Anpassbare Steuerungssysteme für Geräte und Automatisierung.</p>
+        <div class="card-actions">
+          <a href="gerweb2.html#control" class="link">Mehr erfahren</a>
+          <button class="btn-sm" data-product="Steuerungspanel">Angebot anfragen</button>
+        </div>
+      </article>
+
+      <article class="card fade-up" style="transition-delay:240ms">
+        <div class="card-media" style="background-image:url('https://source.unsplash.com/600x400/?outdoor-panel');"></div>
+        <h3>Wasserdichtes Außengehäuse</h3>
+        <p>Langlebige, wetterfeste Paneele für Außeninstallationen.</p>
+        <div class="card-actions">
+          <a href="gerweb2.html#outdoor" class="link">Mehr erfahren</a>
+          <button class="btn-sm" data-product="Wasserdichtes Außengehäuse">Angebot anfragen</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section dark-surface" id="about">
+    <h2 class="section-title">Warum uns wählen</h2>
+    <div class="grid why-grid">
+      <div class="why-box fade-up">
+        <strong>Zertifizierte Komponenten</strong>
+        <p>Wir verwenden getestete und geprüfte Teile für Sicherheit und Langlebigkeit.</p>
+      </div>
+      <div class="why-box fade-up" style="transition-delay:100ms">
+        <strong>Regional & erreichbar</strong>
+        <p>Schneller Support und Werkstatt vor Ort – wir sind nur einen Anruf entfernt.</p>
+      </div>
+      <div class="why-box fade-up" style="transition-delay:200ms">
+        <strong>Maßanfertigungen</strong>
+        <p>Paneele, die auf Ihre Verkabelungspläne und Anwendung zugeschnitten sind.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION BANNER -->
+  <section class="section cta-banner">
+    <div class="cta-banner-inner fade-up">
+      <h3>Bereit für ein individuelles Angebot?</h3>
+      <div>
+        <button class="btn btn-primary" id="ctaBannerBtn">Angebot anfragen</button>
+        <a href="tel:+493012345678" class="link muted">Rufen Sie uns an: +49 30 12345678</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <h2 class="section-title">Kontakt</h2>
+    <div class="contact-grid">
+      <div class="contact-card fade-up">
+        <h4>Kontaktinformationen</h4>
+        <p>Telefon: <a class="link" href="tel:+493012345678">+49 30 12345678</a><br>
+           E-Mail: <a class="link" href="mailto:kontakt@elektro-firma.de">kontakt@elektro-firma.de</a><br>
+           Adresse: Musterstraße 12, 10115 Berlin, Deutschland</p>
+      </div>
+
+      <div class="contact-card fade-up" style="transition-delay:120ms">
+        <h4>Schnelles Angebot</h4>
+        <form id="quoteForm" class="form" autocomplete="off">
+          <label>Vollständiger Name<input name="name" required /></label>
+          <label>Firma (optional)<input name="company" /></label>
+          <label>E-Mail<input name="email" type="email" required /></label>
+          <label>Telefon<input name="phone" required /></label>
+          <label>Produkt<select name="product" id="productSelect">
+            <option value="Hauptverteilungspanel">Hauptverteilungspanel</option>
+            <option value="Steuerungspanel">Steuerungspanel</option>
+            <option value="Wasserdichtes Außengehäuse">Wasserdichtes Außengehäuse</option>
+          </select></label>
+          <label>Weitere Details<textarea name="details" rows="3"></textarea></label>
+          <button type="submit" class="btn btn-primary">Anfrage senden</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="gerwebscript.js"></script>
+</body>
+</html>

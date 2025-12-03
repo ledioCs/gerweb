@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Unsere Produkte — Lokale Elektropaneele</title>
+  <link rel="stylesheet" href="gerwebstyles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <div class="logo-box">LOGO</div>
+        <span class="logo-text">Lokale Elektropaneele</span>
+      </div>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="gerweb.html">Startseite</a>
+        <a href="gerweb2.html">Produkte</a>
+        <a href="gerweb.html#about">Über uns</a>
+        <a href="gerweb.html#contact">Kontakt</a>
+      </nav>
+
+      <button id="navToggle" class="nav-toggle" aria-label="Menü umschalten">☰</button>
+    </div>
+  </header>
+
+  <main class="section products-listing fade-up">
+    <h1>Unsere Elektropaneele</h1>
+
+    <article id="main-distribution" class="product-detail">
+      <h2>Hauptverteilungspanel</h2>
+      <img src="https://source.unsplash.com/800x500/?electrical-panel" alt="Hauptverteilungspanel" />
+      <p>Dieses Panel ist zuverlässig für Wohn- und kleine Gewerbeanlagen. Zertifizierte und geprüfte Komponenten sorgen für Sicherheit.</p>
+      <ul>
+        <li>Standardgrößen: 12-36 Stromkreise</li>
+        <li>Verfügbar mit Überspannungsschutz</li>
+        <li>Individuelle Verkabelungsoptionen möglich</li>
+      </ul>
+      <button class="btn btn-primary" data-product="Hauptverteilungspanel">Angebot anfragen</button>
+    </article>
+
+    <article id="control" class="product-detail">
+      <h2>Steuerungspanel</h2>
+      <img src="https://source.unsplash.com/800x500/?control-panel" alt="Steuerungspanel" />
+      <p>Anpassbare Steuerungssysteme für Maschinen und Automatisierung, genau auf Ihre Anforderungen zugeschnitten.</p>
+      <ul>
+        <li>Verschiedene Ein- und Ausgabekonfigurationen</li>
+        <li>Optionale SPS-Integration</li>
+        <li>Robustes Metallgehäuse</li>
+      </ul>
+      <button class="btn btn-primary" data-product="Steuerungspanel">Angebot anfragen</button>
+    </article>
+
+    <article id="outdoor" class="product-detail">
+      <h2>Wasserdichtes Außengehäuse</h2>
+      <img src="https://source.unsplash.com/800x500/?outdoor-panel" alt="Wasserdichtes Außengehäuse" />
+      <p>Langlebige und wetterfeste Paneele für Außeninstallationen.</p>
+      <ul>
+        <li>IP65 zertifizierte Gehäuse</li>
+        <li>UV-beständige Lackierung</li>
+        <li>Korrosionsbeständiges Material</li>
+      </ul>
+      <button class="btn btn-primary" data-product="Wasserdichtes Außengehäuse">Angebot anfragen</button>
+    </article>
+  </main>
+
+  <script src="gerwebscript.js"></script>
+</body>
+</html>

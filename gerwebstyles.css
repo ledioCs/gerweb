@@ -1,0 +1,386 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #222831;
+  color: #eeeeee;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Links */
+a.link {
+  color: #00adb5;
+  text-decoration: none;
+}
+a.link:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn {
+  background-color: #00adb5;
+  color: #222831;
+  border: none;
+  padding: 0.7em 1.3em;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #007f86;
+}
+.btn-outline {
+  background: none;
+  border: 2px solid #00adb5;
+  color: #00adb5;
+}
+.btn-outline:hover {
+  background-color: #00adb5;
+  color: #222831;
+}
+.btn-sm {
+  background-color: #393e46;
+  color: #eeeeee;
+  padding: 0.4em 0.8em;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  border: 1px solid #00adb5;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn-sm:hover {
+  background-color: #00adb5;
+  color: #222831;
+}
+
+/* Header */
+.site-header {
+  background-color: #393e46;
+  padding: 1em 1.5em;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #00adb5;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.logo-box {
+  width: 40px;
+  height: 40px;
+  background-color: #00adb5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222831;
+  font-weight: 900;
+  font-size: 1.3rem;
+  border-radius: 4px;
+}
+
+.main-nav a {
+  color: #eeeeee;
+  margin-left: 1.5em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  color: #00adb5;
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #eeeeee;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(120deg, #222831 60%, #00adb5 40%);
+  color: #eeeeee;
+  padding: 4em 1.5em;
+  text-align: center;
+}
+
+.hero-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.headline {
+  font-size: 2.8rem;
+  margin-bottom: 0.6em;
+}
+
+.lead {
+  font-size: 1.2rem;
+  margin-bottom: 1.4em;
+}
+
+.hero-cta .btn,
+.hero-cta .btn-outline {
+  margin: 0 0.6em;
+}
+
+/* Sections */
+.section {
+  max-width: 1120px;
+  margin: 4em auto;
+  padding: 0 1.5em;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* Products preview grid */
+.grid {
+  display: flex;
+  gap: 1.8em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #393e46;
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 1 1 280px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-media {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card h3 {
+  margin: 1em;
+  font-weight: 700;
+  color: #00adb5;
+}
+
+.card p {
+  margin: 0 1em 1em;
+  flex-grow: 1;
+}
+
+.card-actions {
+  margin: 0 1em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-actions .link {
+  font-weight: 600;
+}
+
+.why-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.why-box {
+  background-color: #222831;
+  border-radius: 8px;
+  padding: 2em;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+}
+
+.dark-surface {
+  background-color: #222831;
+}
+
+/* CTA Banner */
+.cta-banner {
+  background-color: #00adb5;
+  color: #222831;
+  padding: 2em 1.5em;
+  text-align: center;
+  border-radius: 8px;
+  max-width: 720px;
+  margin: 4em auto;
+}
+
+.cta-banner-inner > div {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  flex-wrap: wrap;
+}
+
+.cta-banner .btn {
+  font-weight: 700;
+  padding: 0.8em 1.8em;
+  font-size: 1.1rem;
+}
+
+/* Contact */
+.contact-grid {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-card {
+  background-color: #393e46;
+  border-radius: 8px;
+  padding: 1.8em;
+  max-width: 320px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.contact-card h4 {
+  margin-bottom: 1em;
+  color: #00adb5;
+}
+
+/* Forms */
+.form label {
+  display: block;
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+.form input,
+.form select,
+.form textarea {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  margin-top: 0.3em;
+  background-color: #222831;
+  color: #eeeeee;
+  border: 1px solid #00adb5;
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+/* Sticky CTA */
+.sticky-cta {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #00adb5;
+  color: #222831;
+  padding: 0.8em 1.8em;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-weight: 700;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  z-index: 1000;
+}
+
+.cta-left {
+  font-size: 1.1rem;
+}
+
+.cta-btn {
+  background-color: #222831;
+  color: #00adb5;
+  border: none;
+  padding: 0.5em 1.4em;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #393e46;
+}
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    background-color: #393e46;
+    position: absolute;
+    top: 60px;
+    right: 1.5em;
+    padding: 1em 2em;
+    border-radius: 8px;
+  }
+
+  .main-nav.show {
+    display: flex;
+  }
+
+  .main-nav a {
+    margin: 0.7em 0;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeUpAnim 0.6s forwards;
+}
+
+@keyframes fadeUpAnim {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
